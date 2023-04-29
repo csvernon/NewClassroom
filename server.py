@@ -40,14 +40,6 @@ def result():
         content = file.read()
     return f'<html><body style="background: #7C8082"><div style="display: flex; text-align: center; justify-content: center; align-items: center; width: 100%; padding 30px 0; border-radius: 5px; box-shadow: 1px 1px 8px 0px #666; background: #fff;"><div>{content}</div></body></html>'
 
-# .main-block {
-#       display: flex;
-#       width: 90%;
-#       padding: 10px 0; 
-#       border-radius: 5px;
-#       box-shadow: 1px 1px 8px 0px #666; 
-#       background: #fff;
-#       }
 
 if __name__ == '__main__':
     app.run(debug=True)

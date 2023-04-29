@@ -6,7 +6,7 @@ f = open('./data.json', encoding="utf8")
 actionType = {"actionType":"CountByCountry","top":0,},{"actionType":"CountByGender","top":0,},{"actionType":"CountPasswordComplexity","top":0,}
 users = json.load(f)
 
-with open("results.json", "w") as file:
+with open("results.txt", "w") as file:
         file.write("")
         file.close
 
@@ -18,7 +18,7 @@ for i in range(len(actionType)):
     typeTrimmed = type[16:-12]
     
 
-    with open("results.json", "a") as file:
+    with open("results.txt", "a") as file:
         file.write(response.text + "\n")
         file.close
     
