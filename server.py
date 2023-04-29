@@ -32,14 +32,22 @@ def result():
             typeTrimmed = type[16:-12]
 
             with open("results.txt", "a") as file:
-                file.write("<h1>Results " + typeTrimmed + "</h1>" +
+                file.write("<h1 style='text-align: center'>Results " + typeTrimmed + "</h1>" +
                            typeTrimmed + ": " + response.text + "\n")
                 file.close
 
     with open('results.txt', 'r') as file:
         content = file.read()
-    return f'<html><body style="background: #7C8082"><div class="main-block"><div class="block-item">{content}</div></body></html>'
+    return f'<html><body style="background: #7C8082"><div style="display: flex; text-align: center; justify-content: center; align-items: center; width: 100%; padding 30px 0; border-radius: 5px; box-shadow: 1px 1px 8px 0px #666; background: #fff;"><div>{content}</div></body></html>'
 
+# .main-block {
+#       display: flex;
+#       width: 90%;
+#       padding: 10px 0; 
+#       border-radius: 5px;
+#       box-shadow: 1px 1px 8px 0px #666; 
+#       background: #fff;
+#       }
 
 if __name__ == '__main__':
     app.run(debug=True)

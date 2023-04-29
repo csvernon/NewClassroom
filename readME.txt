@@ -1,16 +1,20 @@
 Install instructions:
 recommend following this tutorial to set up python in VS Code https://code.visualstudio.com/docs/python/python-tutorial
-Open VS code as Admin
+install python interpreter from https://www.python.org/downloads/
 install the Python extension for VS Code from the Visual Studio Marketplace
-? pip install -U autopep8
-pip install requests
-pip install flask
+Open VS code as Admin
+install needed dependensies by running powershell commands:
+    pip install requests
+    pip install flask
+    python.exe -m pip install --upgrade pip
 open command prompt in NewClass folder
 ex: win key + cmd
 type cd C:\Users\****\downloads\NewClass
-
+run "python server.py"
 open web browser and paste http://localhost:5000/
 Install "open in browser" extension by TechER
+
+Alternatively you could just run "python test.ty" in the terminal for a CLI output.
 
 What works:
 1. Count by Gender works and reports accurately
